@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+      "underscore" : "*.*"
+    , "lodash"     : "*.*"
+    , "mongodb"    : "*.*"
+  }
+}
