@@ -3,5 +3,6 @@
       "underscore" : "*.*"
     , "lodash"     : "*.*"
     , "mongodb"    : "*.*"
+    , "mocha"      : "*.*"
   }
 }
