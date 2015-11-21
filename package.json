@@ -1,0 +1,18 @@
+{
+    "dependencies": {
+        "underscore" : "*.*"
+      , "lodash"     : "*.*"
+      , "mongodb"    : "*.*"
+      , "mocha"      : "*.*"
+    }
+  , "devDependencies": {
+          "mocha"      : "*.*"
+        , "gulp"       : "*.*"
+        , "gulp-mocha" : "*.*"
+      }
+  , "scripts" : {
+      "test" : "mocha mongo_04.js"
+    , "test_kitten" : "mocha -R nyan mongo_04.js"
+    , "watch" : "gulp watch"
+  }
+}
