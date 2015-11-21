@@ -1,8 +1,12 @@
 {
-  "dependencies": {
-      "underscore" : "*.*"
-    , "lodash"     : "*.*"
-    , "mongodb"    : "*.*"
-    , "mocha"      : "*.*"
+    "dependencies": {
+        "underscore" : "*.*"
+      , "lodash"     : "*.*"
+      , "mongodb"    : "*.*"
+      , "mocha"      : "*.*"
+    }
+  , "scripts" : {
+      "test" : "mocha mongo_04.js"
+    , "test_kitten" : "mocha -R nyan mongo_04.js"
   }
 }
