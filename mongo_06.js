@@ -13,5 +13,20 @@ const productSchema = {
   , 'category' : Category.categorySchema
 };
 
-module.exports = new mongoose.Schema(productSchema);
-module.exports.productSchema = productSchema; 
+const schema = new mongoose.Schema(productSchema);
+const currencySymbol = {
+    'USD':'$'
+  , 'GBP':'£'
+  , 'EUR': '€'
+};
+
+// Standard human readable string form of price.
+// We want $25 instead of 25 USD.
+schema.virtual('displayPrice').get(function virtualDisplayPrice(){
+  return ''+currencySymbol[this.price.currency]+this.price.amount;
+});
+schema.set('toObject', { 'virtuals':true });
+schema.set('toJSON', { 'virtuals':true });
+
+module.exports = schema;
+module.exports.productSchema = productSchema;
