@@ -34,9 +34,9 @@ const productSchema = {
 
 const schema = new mongoose.Schema(productSchema);
 const currencySymbol = {
-    'USD':'$'
-  , 'GBP':'£'
-  , 'EUR': '€'
+    'USD' : '$'
+  , 'GBP' : '£'
+  , 'EUR' : '€'
 };
 
 // Standard human readable string form of price.
